@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <!-- link bootstrap css file -->
+    <link rel="stylesheet" href="resources/bootstrap-5.2.3/css/bootstrap.min.css">
+    <!-- link bootstrap js file -->
+    <script src="resources/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+    <!--link font awasome css-->
+    <link rel="stylesheet" href="resources/fontawesome-free-6.4.2/css/all.css">
+</head>
+
+<body>
+    <div class="calculator mt-3 ">
+        <div class="row ms-3 me-3 mt-4 mb-4">
+            <input type="text" class="inputField" id="inputField" readonly>
+        </div>
+
+        <div class="row ms-2 me-2 mt-2">
+            <div class="col-3 col-md-3 ">
+                <button type="button" class="btnSpecial fw-bold" onclick="refreshField()" id="cButton"
+                    value="">C</button>
+            </div>
+
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnNumbers" type="submit" id="btnNumbers" onclick="clickNumbers(value)"
+                    value="7">7</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnNumbers" type="submit" id="btnNumbers" onclick="clickNumbers(value)"
+                    value="8">8</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnNumbers" type="submit" id="btnNumbers" onclick="clickNumbers(value)"
+                    value="9">9</button>
+            </div>
+        </div>
+
+        <div class="row ms-2 me-2 mt-2">
+            <div class="col-3 col-md-3">
+                <button type="button" class="  btnCalMarkk fw-bold" onclick="clickNumbers(value)" value="+">+</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnNumbers" type="submit" id="btnNumbers" onclick="clickNumbers(value)"
+                    value="4">4</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnNumbers" type="submit" id="btnNumbers" onclick="clickNumbers(value)"
+                    value="5">5</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnNumbers" type="submit" id="btnNumbers" onclick="clickNumbers(value)"
+                    value="6">6</button>
+            </div>
+        </div>
+
+        <div class="row ms-2 me-2 mt-2">
+            <div class="col-3 col-md-3">
+                <button type="button" class="  btnCalMarkk fw-bold" onclick="clickNumbers(value)" value="-">-</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnNumbers" type="submit" id="btnNumbers" onclick="clickNumbers(value)"
+                    value="1">1</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnNumbers" type="submit" id="btnNumbers" onclick="clickNumbers(value)"
+                    value="2">2</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnNumbers" type="submit" id="btnNumbers" onclick="clickNumbers(value)"
+                    value="3">3</button>
+            </div>
+        </div>
+
+        <div class="row ms-2 me-2 mt-2">
+            <div class="col-3 col-md-3">
+                <button type="button" class="  btnCalMarkk fw-bold" onclick="clickNumbers(value)" value="*">*</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnNumbers" type="submit" id="btnNumbers" onclick="clickNumbers(value)"
+                    value="0">0</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnNumbers" type="submit" id="btnNumbers" onclick="clickNumbers(value)"
+                    value=".">.</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnNumbers" type="submit" onclick="btnCalculations()">=</button>
+            </div>
+        </div>
+
+        <div class="row ms-2 me-2 mt-2">
+            <div class="col-3 col-md-3 ">
+                <button type="button" class="  btnCalMarkk fw-bold" onclick="clickNumbers(value)" value="/">/</button>
+            </div>
+
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnCalMarkk" type="submit" id="btnNumbers" onclick="clickNumbers(value)"
+                    value="%">%</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button class="fw-bold   btnSpecial" type="submit">X</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>

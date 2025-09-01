@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    width: 100%;
+    /* horizonral center */
+    justify-content: center;
+    /* vertical center */
+    align-items: center;
+    /* full screen height */
+    height: 100vh;
+    background-color: rgb(105, 104, 104);
+}
+
+.calculator {
+    /* display: flex; */
+    width: 100%;
+    max-width: 350px;
+    /* full width set klata eken always max width eka 350px */
+
+    /* horizonral center */
+    justify-content: center;
+    /* vertical center */
+    align-items: center;
+    /* full screen height */
+    height: 80vh;
+    background-color: black;
+    border-radius: 20px;
+
+    /* horizontal vertical howmuchblur coloor */
+    box-shadow: 10px 10px 200px rgba(0, 0, 0, 0.5);
+}
+
+.inputField {
+    display: flex;
+    height: 90px;
+    color: rgb(255, 255, 255);
+    /* horizonral center */
+    justify-content: center;
+    background-color: rgb(54, 53, 53);
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+
+/* make buttons circular */
+.btnNumbers {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* always hoght and width is same size*/
+    border-radius: 50%;
+    /* makes it circle */
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0;
+
+}
+
+.btnCalMarkk {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* always hoght and width is same size*/
+    border-radius: 50%;
+    /* makes it circle */
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0;
+
+    background-color: orange;
+}
+
+.btnSpecial {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0;
+    background-color: greenyellow;
+}
+
+/* center buttons inside col-3 */
+.col-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
